@@ -1,7 +1,7 @@
-package io.getarrays.secondService.dao;
+package io.getarrays.secondService.repo;
 
 
-import io.getarrays.secondService.logic.ingredient.Ingredient;
+import io.getarrays.secondService.domain.Ingredient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

@@ -1,7 +1,8 @@
-package io.getarrays.secondService.logic.UOM;
+package io.getarrays.secondService.service.UOM;
 
-import io.getarrays.secondService.Interface.UOMCollectionInterface;
-import io.getarrays.secondService.dao.UOMRepo;
+import io.getarrays.secondService.Interface.UOMServiceInterface;
+import io.getarrays.secondService.repo.UOMRepo;
+import io.getarrays.secondService.domain.UOM;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,7 @@ import java.util.Collection;
 @RequiredArgsConstructor
 @Transactional
 @Slf4j
-public class UOMService implements UOMCollectionInterface {
+public class UOMService implements UOMServiceInterface {
     private final UOMRepo uomRepo;
 
     @Override

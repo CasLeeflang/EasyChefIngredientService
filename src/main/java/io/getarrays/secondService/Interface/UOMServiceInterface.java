@@ -1,12 +1,12 @@
 package io.getarrays.secondService.Interface;
 
 
-import io.getarrays.secondService.logic.UOM.UOM;
+import io.getarrays.secondService.domain.UOM;
 
 import java.util.Collection;
 
 
-public interface UOMCollectionInterface {
+public interface UOMServiceInterface {
     UOM saveUOM(UOM uom);
     UOM getUOM(Long id);
     Collection<UOM> getAllUOM();

@@ -1,17 +1,15 @@
-package io.getarrays.secondService.logic.ingredient;
+package io.getarrays.secondService.service.ingredient;
 
-import io.getarrays.secondService.Interface.IngredientCollectionInterface;
-import io.getarrays.secondService.dao.IngredientRepo;
-import io.getarrays.secondService.dao.UOMRepo;
-import io.getarrays.secondService.logic.UOM.UOM;
+import io.getarrays.secondService.Interface.IngredientServiceInterface;
+import io.getarrays.secondService.repo.IngredientRepo;
+import io.getarrays.secondService.repo.UOMRepo;
+import io.getarrays.secondService.domain.Ingredient;
+import io.getarrays.secondService.domain.UOM;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
-import java.math.MathContext;
-import java.math.RoundingMode;
 import java.util.Collection;
 
 
@@ -19,7 +17,7 @@ import java.util.Collection;
 @RequiredArgsConstructor
 @Transactional
 @Slf4j
-public class IngredientService implements IngredientCollectionInterface {
+public class IngredientService implements IngredientServiceInterface {
     private final IngredientRepo ingredientRepo;
     private final UOMRepo uomRepo;
 

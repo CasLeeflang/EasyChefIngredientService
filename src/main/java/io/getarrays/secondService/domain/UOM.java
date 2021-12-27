@@ -1,4 +1,4 @@
-package io.getarrays.secondService.logic.UOM;
+package io.getarrays.secondService.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
